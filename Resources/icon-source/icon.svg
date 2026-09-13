@@ -1,0 +1,51 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F6BFF"/>
+      <stop offset="55%" stop-color="#3450E6"/>
+      <stop offset="100%" stop-color="#0E9488"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.32"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blurBlob" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="70"/>
+    </filter>
+    <filter id="softShadow" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#0B1220" flood-opacity="0.30"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1024" height="1024" fill="url(#bg)"/>
+
+  <circle cx="860" cy="180" r="230" fill="#FF8A65" opacity="0.30" filter="url(#blurBlob)"/>
+  <circle cx="150" cy="900" r="260" fill="#17C3B2" opacity="0.25" filter="url(#blurBlob)"/>
+
+  <rect x="0" y="0" width="1024" height="1024" fill="url(#sheen)"/>
+
+  <g filter="url(#softShadow)">
+    <g stroke="#FFF6E6" stroke-linecap="round">
+      <line x1="300" y1="760" x2="150" y2="878" stroke-width="27"/>
+      <line x1="300" y1="760" x2="188" y2="928" stroke-width="27"/>
+      <line x1="300" y1="760" x2="242" y2="958" stroke-width="27"/>
+      <line x1="300" y1="760" x2="305" y2="972" stroke-width="27"/>
+      <line x1="300" y1="760" x2="368" y2="958" stroke-width="27"/>
+      <line x1="300" y1="760" x2="418" y2="928" stroke-width="27"/>
+      <line x1="300" y1="760" x2="450" y2="878" stroke-width="27"/>
+    </g>
+
+    <line x1="300" y1="760" x2="772" y2="228" stroke="#F5F1E8" stroke-width="70" stroke-linecap="round"/>
+
+    <line x1="266" y1="798" x2="344" y2="712" stroke="#E0653F" stroke-width="88" stroke-linecap="round"/>
+  </g>
+
+  <g fill="#FFFFFF" filter="url(#softShadow)">
+    <ellipse cx="790" cy="792" rx="76" ry="64"/>
+    <ellipse cx="702" cy="700" rx="33" ry="41" transform="rotate(-28 702 700)"/>
+    <ellipse cx="762" cy="654" rx="35" ry="45" transform="rotate(-9 762 654)"/>
+    <ellipse cx="828" cy="654" rx="35" ry="45" transform="rotate(9 828 654)"/>
+    <ellipse cx="884" cy="700" rx="33" ry="41" transform="rotate(28 884 700)"/>
+  </g>
+</svg>
